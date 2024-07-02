@@ -3,24 +3,34 @@ import Image from 'astro/components/Image.astro';
 import Dan from '../assets/image-daniel.jpg';
 import Quote from '../assets/bg-pattern-quotation.svg';
 ---
-<section>
-  <div>
-		<Image src={Dan} alt="Daniel Clifford" />
-		<h3 class="">Daniel Clifford</h3>
-    <h4 class="">Verified Graduate</h4>
+
+<section class="grid bg-violet-700 rounded-lg shadow">
+	<div class="grid grid-flow-col w-10/12 m-auto py-4 items-center justify-start gap-5">
+		<Image
+			src={Dan}
+			alt="Daniel Clifford"
+			class:list={'rounded-full border-2 border-violet-400 w-7'}
+		/>
+		<section class="">
+			<h3 class=" font-medium text-sm">Daniel Clifford</h3>
+			<h4 class=" opacity-50 text-xs font-medium">Verified Graduate</h4>
+		</section>
 	</div>
-	<Image src={Quote} alt="Quote" />
-  <article>
-    <h2>I received a job offer mid-course, and the subjects I learned were current, if
-	not more so, in the company I joined. I honestly feel I got every penny’s
-	worth.
+	<Image src={Quote} alt="Quote marks in a light purple colour" class=' absolute right-8 w-28 ' />
+	<article class="relative w-10/12 m-auto">
+		<h2 class=" text-xl font-semibold">
+			I received a job offer mid-course, and the subjects I learned were
+			current, if not more so, in the company I joined. I honestly feel I got
+			every penny’s worth.
 		</h2>
-    <blockquote>“ I was an EMT for many years before I joined the bootcamp. I’ve been
-	looking to make a transition and have heard some people who had an amazing
-	experience here. I signed up for the free intro course and found it incredibly
-	fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most
-	grueling - time of my life. Since completing the course, I’ve successfully
-	switched careers, working as a Software Engineer at a VR startup. ”</blockquote>
-  </article>
-	
+		<blockquote class="opacity-70 text-stone-300 text-sm py-10">
+			“ I was an EMT for many years before I joined the bootcamp. I’ve been
+			looking to make a transition and have heard some people who had an amazing
+			experience here. I signed up for the free intro course and found it
+			incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the
+			best - and most grueling - time of my life. Since completing the course,
+			I’ve successfully switched careers, working as a Software Engineer at a VR
+			startup. ”
+		</blockquote>
+	</article>
 </section>
