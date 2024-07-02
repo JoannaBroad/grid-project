@@ -8,11 +8,15 @@ import Patrick from '../components/Patrick.astro';
 ---
 
 <Layout>
-	<section class="grid gap-5 mb-16 bg-slate-200 ">
-		<Daniel />
-		<Jonathan />
-		<Jeanette />
-		<Patrick />
-		<Kira />
+	<section class="grid md:grid-cols-4 md:w-4/5 md:h1/2 m-auto gap-5 mb-16">
+		<section class="inline-grid gap-5 grid-cols-1 md:grid-cols-3 col-span-3">
+			<Daniel />
+			<Jonathan />
+			<Jeanette />
+			<Patrick />
+		</section>
+		<section class="md:inline-grid w-screen md:w-fit">
+			<Kira />
+		</section>
 	</section>
 </Layout>
