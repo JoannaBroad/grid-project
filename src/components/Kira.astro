@@ -2,15 +2,23 @@
 import Image from 'astro/components/Image.astro';
 import KiraImage from '../assets/image-kira.jpg';---
 
-<section class="">
-	<div class="">
-		<Image src={KiraImage} alt="Kira Whittle" />
-		<h3>Kira Whittle</h3>
-		<h4>Verified Graduate</h4>
+<section class="bg-white rounded-lg shadow text-slate-600">
+	<div class="grid grid-flow-col w-10/12 m-auto py-4 items-center justify-start gap-5">
+		<Image
+			src={KiraImage}
+			alt="Kira Whittle"
+			class:list={'rounded-full border-2 border-violet-400 w-7'}
+		/>
+		<section class="">
+			<h3 class=" font-medium text-sm">Kira Whittle</h3>
+			<h4 class=" opacity-50 text-xs font-medium">Verified Graduate</h4>
+		</section>
 	</div>
-	<article>
-		<h2>Such a life-changing experience. Highly recommended!</h2>
-		<blockquote>
+	<article class="relative w-10/12 m-auto">
+		<h2 class=" text-xl font-semibold">
+			Such a life-changing experience. Highly recommended!
+		</h2>
+		<blockquote class="opacity-70 text-sm pt-1 pb-2">
 			“ Before joining the bootcamp, I’ve never written a line of code. I needed
 			some structure from professionals who can help me learn programming step
 			by step. I was encouraged to enroll by a former student of theirs who can

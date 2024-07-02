@@ -3,14 +3,24 @@ import Image from 'astro/components/Image.astro';
 import Jan from '../assets/image-jeanette.jpg';
 ---
 
-<section class="">
-  <div class="">
-		<Image src={Jan} alt="Jeanette Harmon" />
-		<h3 class="">Jeanette Harmon</h3>
-		<h4 class="">Verified Graduate</h4>
-  </div>
-  <article>
-		<h2>An overall wonderful and rewarding experience</h2>
-		<blockquote>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</blockquote>
-  </article>
+<section class="bg-white rounded-lg shadow text-slate-600">
+	<div class="grid grid-flow-col w-10/12 m-auto py-4 items-center justify-start gap-5">
+		<Image
+			src={Jan}
+			alt="Jeanette Harmon"
+			class:list={'rounded-full border-2 border-violet-400 w-7'}
+		/>
+		<section class="">
+			<h3 class=" font-medium text-sm">Jeanette Harmon</h3>
+			<h4 class=" opacity-50 text-xs font-medium">Verified Graduate</h4>
+		</section>
+	</div>
+	<article class="relative w-10/12 m-auto">
+		<h2 class=" text-xl font-semibold">
+			An overall wonderful and rewarding experience
+		</h2>
+		<blockquote class="opacity-70 text-sm pt-1 pb-2">
+			“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”
+		</blockquote>
+	</article>
 </section>
